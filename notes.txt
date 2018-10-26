@@ -1,0 +1,27 @@
+
+// React => main library, dont document DOM, have nothing to do with the browser or DOM
+
+// React-DOM => has to job to include react app to the DOM
+
+// npm init => create package.json file
+
+All npm dependencies will be added to package.json
+
+// package.json => 
+
+// WEBPACK => does all react code, components has to be compiled & bundled in 1 JS file, nothing to do with React
+
+// webpack-dev-server, webpack-cli => allows run webpack commands and also used for build script
+
+// whenever you use WEBPACK you need to have a config file
+
+// BABEL => because react uses es6 classes or import something...so transpile code to browser friendly code depends on browser.
+
+
+
+// babel-preset-react => 
+// babel-env-preset => doesn't just compile es6 compile but also later version and it can look what browser is using and it can compile what that browser needs.
+// babel-loader => able to compile jsx(markup templating)
+// html-webpack-plugin => generate build HTML file
+
+
