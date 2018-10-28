@@ -1,19 +1,27 @@
-import React from 'react';
+import React, {Component} from 'react';
+import Login from './screens/Login';
 
-class App extends React.Component{
+class App extends Component{
 
     constructor(){
         super()
 
         this.state = {
-
+            message: 1
         }
+    }
+
+    click = () => {
+        console.log(this);
+        this.setState({
+            message: 53
+        })
     }
 
     render(){
         return( 
-            <div>
-                <h1> My React</h1> 
+            <div className="container">
+                <Login />
             </div>
         )
     }
