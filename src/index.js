@@ -1,18 +1,18 @@
-// // we use IMPORT because I am using BABEL that compiles ES6...
-import React from 'react';
-import ReactDOM from'react-dom';
-import App from './components/App';
-import {Provider} from 'react-redux'; //provides store
-import store from './components/store';
+// we use IMPORT because I am using BABEL that compiles ES6...
+import React from "react";
+import ReactDOM from "react-dom";
+import App from "./containers/App";
+import { Provider } from "react-redux"; // provides store
+import store from "./redux/store/blog";
 
 ReactDOM.render(
-    <Provider store={store}> 
-        <App /> 
+
+    // Provider => like a passageway that connected to every component, pass STORE as PROP
+    <Provider store={store}>
+        <App />
     </Provider>, 
     document.getElementById("app")
 ); // refers to index.html
-
-
 // In order to connect redux to react so that the state pass to store to my react app
 // 
 
